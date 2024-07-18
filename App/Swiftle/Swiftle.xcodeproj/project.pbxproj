@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0592ED2A2C48A69600727466 /* BackgroundGeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592ED292C48A69600727466 /* BackgroundGeneralView.swift */; };
+		0592ED2E2C48A6E000727466 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592ED2D2C48A6E000727466 /* SplashView.swift */; };
+		0592ED302C48A95300727466 /* RegularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592ED2F2C48A95300727466 /* RegularButton.swift */; };
+		0592ED322C48AEA800727466 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592ED312C48AEA800727466 /* LoginView.swift */; };
+		0592ED342C48B92400727466 /* mainScreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592ED332C48B92400727466 /* mainScreenButton.swift */; };
+		0592ED362C48BF1C00727466 /* MembershipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592ED352C48BF1B00727466 /* MembershipButton.swift */; };
 		635CE2B92C48336400F857AD /* SwiftleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635CE2B82C48336400F857AD /* SwiftleApp.swift */; };
 		635CE2BB2C48336400F857AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635CE2BA2C48336400F857AD /* ContentView.swift */; };
 		635CE2BD2C48336600F857AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635CE2BC2C48336600F857AD /* Assets.xcassets */; };
@@ -39,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0592ED292C48A69600727466 /* BackgroundGeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGeneralView.swift; sourceTree = "<group>"; };
+		0592ED2D2C48A6E000727466 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		0592ED2F2C48A95300727466 /* RegularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularButton.swift; sourceTree = "<group>"; };
+		0592ED312C48AEA800727466 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0592ED332C48B92400727466 /* mainScreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreenButton.swift; sourceTree = "<group>"; };
+		0592ED352C48BF1B00727466 /* MembershipButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipButton.swift; sourceTree = "<group>"; };
 		635CE2B52C48336400F857AD /* Swiftle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		635CE2B82C48336400F857AD /* SwiftleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftleApp.swift; sourceTree = "<group>"; };
 		635CE2BA2C48336400F857AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +93,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0592ED282C48A62400727466 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0592ED292C48A69600727466 /* BackgroundGeneralView.swift */,
+				0592ED2D2C48A6E000727466 /* SplashView.swift */,
+				0592ED2F2C48A95300727466 /* RegularButton.swift */,
+				0592ED312C48AEA800727466 /* LoginView.swift */,
+				0592ED332C48B92400727466 /* mainScreenButton.swift */,
+				0592ED352C48BF1B00727466 /* MembershipButton.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		635CE2AC2C48336400F857AD = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +129,7 @@
 		635CE2B72C48336400F857AD /* Swiftle */ = {
 			isa = PBXGroup;
 			children = (
+				0592ED282C48A62400727466 /* Presentation */,
 				635CE2B82C48336400F857AD /* SwiftleApp.swift */,
 				635CE2BA2C48336400F857AD /* ContentView.swift */,
 				635CE2E22C48348D00F857AD /* Model.swift */,
@@ -272,13 +298,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0592ED302C48A95300727466 /* RegularButton.swift in Sources */,
 				635CE2EB2C484C0C00F857AD /* BannerView.swift in Sources */,
+				0592ED362C48BF1C00727466 /* MembershipButton.swift in Sources */,
 				635CE2E32C48348D00F857AD /* Model.swift in Sources */,
 				635CE2E52C483A0800F857AD /* KeyboardView.swift in Sources */,
 				635CE2BB2C48336400F857AD /* ContentView.swift in Sources */,
 				635CE2B92C48336400F857AD /* SwiftleApp.swift in Sources */,
+				0592ED342C48B92400727466 /* mainScreenButton.swift in Sources */,
 				635CE2E92C483E5A00F857AD /* ViewModel.swift in Sources */,
 				635CE2E72C483C0300F857AD /* GameView.swift in Sources */,
+				0592ED322C48AEA800727466 /* LoginView.swift in Sources */,
+				0592ED2A2C48A69600727466 /* BackgroundGeneralView.swift in Sources */,
+				0592ED2E2C48A6E000727466 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
