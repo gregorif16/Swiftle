@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053AFAFC2C577E7A00C44D66 /* NetworkLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFAFB2C577E7A00C44D66 /* NetworkLogin.swift */; };
+		053AFB012C577F4800C44D66 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB002C577F4800C44D66 /* HTTPMethods.swift */; };
+		053AFB032C577F5B00C44D66 /* ResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB022C577F5B00C44D66 /* ResponseCodes.swift */; };
+		053AFB062C57800200C44D66 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB052C57800200C44D66 /* LoginRepository.swift */; };
+		053AFB092C582B4700C44D66 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB082C582B4700C44D66 /* LoginViewModel.swift */; };
+		053AFB0D2C582CAA00C44D66 /* LoginUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB0C2C582CA900C44D66 /* LoginUsecase.swift */; };
+		053AFB102C58312000C44D66 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB0F2C58312000C44D66 /* MainScreenView.swift */; };
+		053AFB132C58345400C44D66 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB122C58345400C44D66 /* TabView.swift */; };
+		053AFB162C583C3300C44D66 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB152C583C3300C44D66 /* CalendarView.swift */; };
+		053AFB192C583CE000C44D66 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB182C583CE000C44D66 /* RankingView.swift */; };
 		0592ED2A2C48A69600727466 /* BackgroundGeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592ED292C48A69600727466 /* BackgroundGeneralView.swift */; };
 		0592ED2E2C48A6E000727466 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592ED2D2C48A6E000727466 /* SplashView.swift */; };
 		0592ED302C48A95300727466 /* RegularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592ED2F2C48A95300727466 /* RegularButton.swift */; };
@@ -45,6 +55,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		053AFAFB2C577E7A00C44D66 /* NetworkLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogin.swift; sourceTree = "<group>"; };
+		053AFB002C577F4800C44D66 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		053AFB022C577F5B00C44D66 /* ResponseCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodes.swift; sourceTree = "<group>"; };
+		053AFB052C57800200C44D66 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		053AFB082C582B4700C44D66 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		053AFB0C2C582CA900C44D66 /* LoginUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUsecase.swift; sourceTree = "<group>"; };
+		053AFB0F2C58312000C44D66 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		053AFB122C58345400C44D66 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		053AFB152C583C3300C44D66 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		053AFB182C583CE000C44D66 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
 		0592ED292C48A69600727466 /* BackgroundGeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGeneralView.swift; sourceTree = "<group>"; };
 		0592ED2D2C48A6E000727466 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		0592ED2F2C48A95300727466 /* RegularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularButton.swift; sourceTree = "<group>"; };
@@ -93,9 +113,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		053AFAFA2C577E6200C44D66 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				053AFAFF2C577F2C00C44D66 /* BaseNetwork */,
+				053AFAFB2C577E7A00C44D66 /* NetworkLogin.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		053AFAFF2C577F2C00C44D66 /* BaseNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				053AFB002C577F4800C44D66 /* HTTPMethods.swift */,
+				053AFB022C577F5B00C44D66 /* ResponseCodes.swift */,
+			);
+			path = BaseNetwork;
+			sourceTree = "<group>";
+		};
+		053AFB042C577FED00C44D66 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				053AFB0A2C582C6500C44D66 /* Entities */,
+				053AFB052C57800200C44D66 /* LoginRepository.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		053AFB072C582B3600C44D66 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				053AFB082C582B4700C44D66 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		053AFB0A2C582C6500C44D66 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				053AFB0B2C582C6D00C44D66 /* UseCases */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		053AFB0B2C582C6D00C44D66 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				053AFB0C2C582CA900C44D66 /* LoginUsecase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		053AFB0E2C58310D00C44D66 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				053AFB0F2C58312000C44D66 /* MainScreenView.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		053AFB112C58344200C44D66 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				053AFB122C58345400C44D66 /* TabView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		053AFB142C583C0400C44D66 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				053AFB152C583C3300C44D66 /* CalendarView.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		053AFB172C583CCE00C44D66 /* RankingView */ = {
+			isa = PBXGroup;
+			children = (
+				053AFB182C583CE000C44D66 /* RankingView.swift */,
+			);
+			path = RankingView;
+			sourceTree = "<group>";
+		};
 		0592ED282C48A62400727466 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				053AFB172C583CCE00C44D66 /* RankingView */,
+				053AFB142C583C0400C44D66 /* CalendarView */,
+				053AFB112C58344200C44D66 /* TabView */,
+				053AFB0E2C58310D00C44D66 /* MainScreen */,
+				053AFB072C582B3600C44D66 /* ViewModel */,
 				0592ED292C48A69600727466 /* BackgroundGeneralView.swift */,
 				0592ED2D2C48A6E000727466 /* SplashView.swift */,
 				0592ED2F2C48A95300727466 /* RegularButton.swift */,
@@ -129,6 +237,8 @@
 		635CE2B72C48336400F857AD /* Swiftle */ = {
 			isa = PBXGroup;
 			children = (
+				053AFB042C577FED00C44D66 /* Domain */,
+				053AFAFA2C577E6200C44D66 /* Data */,
 				0592ED282C48A62400727466 /* Presentation */,
 				635CE2B82C48336400F857AD /* SwiftleApp.swift */,
 				635CE2BA2C48336400F857AD /* ContentView.swift */,
@@ -300,14 +410,24 @@
 			files = (
 				0592ED302C48A95300727466 /* RegularButton.swift in Sources */,
 				635CE2EB2C484C0C00F857AD /* BannerView.swift in Sources */,
+				053AFB0D2C582CAA00C44D66 /* LoginUsecase.swift in Sources */,
+				053AFB192C583CE000C44D66 /* RankingView.swift in Sources */,
 				0592ED362C48BF1C00727466 /* MembershipButton.swift in Sources */,
+				053AFB132C58345400C44D66 /* TabView.swift in Sources */,
 				635CE2E32C48348D00F857AD /* Model.swift in Sources */,
+				053AFB162C583C3300C44D66 /* CalendarView.swift in Sources */,
 				635CE2E52C483A0800F857AD /* KeyboardView.swift in Sources */,
+				053AFB012C577F4800C44D66 /* HTTPMethods.swift in Sources */,
 				635CE2BB2C48336400F857AD /* ContentView.swift in Sources */,
+				053AFB062C57800200C44D66 /* LoginRepository.swift in Sources */,
+				053AFB092C582B4700C44D66 /* LoginViewModel.swift in Sources */,
 				635CE2B92C48336400F857AD /* SwiftleApp.swift in Sources */,
+				053AFB102C58312000C44D66 /* MainScreenView.swift in Sources */,
 				0592ED342C48B92400727466 /* mainScreenButton.swift in Sources */,
 				635CE2E92C483E5A00F857AD /* ViewModel.swift in Sources */,
 				635CE2E72C483C0300F857AD /* GameView.swift in Sources */,
+				053AFB032C577F5B00C44D66 /* ResponseCodes.swift in Sources */,
+				053AFAFC2C577E7A00C44D66 /* NetworkLogin.swift in Sources */,
 				0592ED322C48AEA800727466 /* LoginView.swift in Sources */,
 				0592ED2A2C48A69600727466 /* BackgroundGeneralView.swift in Sources */,
 				0592ED2E2C48A6E000727466 /* SplashView.swift in Sources */,
