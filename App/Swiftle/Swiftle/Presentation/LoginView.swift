@@ -8,9 +8,12 @@ import SwiftUI
 
 struct LoginView: View {
     @StateObject private var viewModel = LoginViewModel()
+    @State var fakeLoginInfo = ""
+    @State var fakePasswordInfo = ""
+    @State var isRegistrationViewVisible = false
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ZStack {
                 GeneralBackGround()
                 VStack {
@@ -21,7 +24,7 @@ struct LoginView: View {
                         .cornerRadius(75)
                     
                     VStack {
-                        TextField("", text: $viewModel.username)
+                        TextField("", text: $fakeLoginInfo)
                             .frame(width: 300)
                             .padding()
                             .background(.clear)
@@ -32,16 +35,16 @@ struct LoginView: View {
                                     .stroke(Color("ColorYellow"), lineWidth: 2)
                             )
                         
-                        Text("Nombre de usuario")
+                        Text("Usuario")
                             .padding(.horizontal, 4)
                             .background(Color("backgroundColor"))
                             .cornerRadius(8)
                             .foregroundStyle(.white)
-                            .offset(x: -70, y: -70)
+                            .offset(x: -110, y: -70)
                     }
                     
                     VStack {
-                        SecureField("", text: $viewModel.password)
+                        SecureField("", text: $fakePasswordInfo)
                             .frame(width: 300)
                             .padding()
                             .background(.clear)
@@ -59,8 +62,7 @@ struct LoginView: View {
                             .offset(x: -100, y: -70)
                     }
                     
-                    NavigationLink(
-                        destination: TabGeneralView(),
+                    NavigationLink(destination: TabGeneralView(),
                         isActive: $viewModel.isLoggedIn,
                         label: {
                             Button(action: {
@@ -76,14 +78,18 @@ struct LoginView: View {
                     
                     Spacer()
                     
-                    Button {} label: {
+                    Button {
+                        
+                        isRegistrationViewVisible = true
+                    } label: {
                         Text("Registrarse")
                             .foregroundStyle(.white)
                     }
                 }
                 .padding()
             }
-        }
+        } .sheet(isPresented: $isRegistrationViewVisible, content: { RegistrationForm()
+        })
     }
 }
 

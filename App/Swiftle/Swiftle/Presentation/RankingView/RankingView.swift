@@ -12,7 +12,7 @@ struct RankingView: View {
         ZStack {
             GeneralBackGround()
             VStack {
-                HStack(spacing: -80) {
+                HStack(spacing: -100) {
                     VStack(spacing: -25) {
                         Spacer()
                         Image("trophy")
@@ -22,7 +22,7 @@ struct RankingView: View {
                     VStack(spacing: -25) {
                         Image("trophy")
                             .resizable()
-                            .frame(width: 250, height: 300)
+                            .frame(width: 250, height: 260)
                         PlaceHolderName(name: "Mary")
                         Image("normalLogo")
                             .resizable()
@@ -34,15 +34,14 @@ struct RankingView: View {
                         Image("trophy")
                         PlaceHolderName(name: "Michael")
                     }
-                } .frame(height: 400)
-                Spacer()
+                } .frame(height: 300)
+                    .padding(.bottom, 30)
                 Image("rankingTable")
                     .resizable()
-                    .frame(width: 240, height: 290)
+                    .frame(width: 260, height: 295)
+                    .padding(.bottom, 17)
                     
-            }
-            
-            
+            } .padding(.top, -120)
         }
     }
     

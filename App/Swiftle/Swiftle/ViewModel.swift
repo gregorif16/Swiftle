@@ -16,7 +16,7 @@ enum BannerType {
 final class ViewModel: ObservableObject {
 	var numOfRow: Int = 0
 	@Published var bannerType: BannerType? = nil
-	@Published var result: String = "REINA"
+	@Published var result: String = "ARRAY"
 	@Published var word: [LetterModel] = []
 	@Published var gameData: [[LetterModel]] = [
 		[.init(""), .init(""), .init(""), .init(""), .init("")],

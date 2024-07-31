@@ -11,6 +11,7 @@ struct ContentView: View {
 	@StateObject var viewModel = ViewModel()
 	
     var body: some View {
+        
 		ZStack {
             GeneralBackGround()
 			VStack(spacing: 40) {
@@ -31,7 +32,7 @@ struct ContentView: View {
 			if viewModel.bannerType != nil {
 				BannerView(bannerType: viewModel.bannerType!)
 			}
-		}
+		}  
     }
     
     var line: some View {

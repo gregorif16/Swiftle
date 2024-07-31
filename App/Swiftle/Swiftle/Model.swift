@@ -18,7 +18,8 @@ enum Status {
 var keyboardData: [LetterModel] = [
 	.init("Q"), .init("W"), .init("E"), .init("R"), .init("T"), .init("Y"), .init("U"), .init("I"), .init("O"), .init("P"),
 	.init("A"), .init("S"), .init("D"), .init("F"), .init("G"), .init("H"), .init("J"), .init("K"), .init("L"), .init("Ñ"),
-	.init("🚀"), .init(""), .init("Z"), .init("X"), .init("V"), .init("B"), .init("N"), .init("M"), .init(""), .init("🗑️"),
+	 .init(""), .init("Z"), .init("X"), .init("V"), .init("B"), .init("N"), .init("M"), .init(""), .init("🗑️"),
+    .init("Verificar 🚀"),
 ]
 
 struct LetterModel {

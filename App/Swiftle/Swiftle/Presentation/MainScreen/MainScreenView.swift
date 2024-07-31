@@ -9,30 +9,32 @@ import SwiftUI
 
 struct MainScreenView: View {
     var body: some View {
-        ZStack {
-            GeneralBackGround()
-            
-            VStack(spacing: 32) {
-                Image("iconNoTitle")
-                    .padding(.top, 68)
+        NavigationView {
+            ZStack {
+                GeneralBackGround()
                 
-                mainScreenButton(number: 4, title: "Letras", action: {
-                    // Action for button 4
-                })
-                mainScreenButton(number: 5, title: "Letras", action: {
-                    // Action for button 4
-                })
-                
-                mainScreenButton(number: 6, title: "Letras", action: {
-                    // Action for button 6
-                })
-                mainScreenButton(number: 7, title: "Letras", action: {
-                    // Action for button 7
-                })
+                VStack(spacing: 32) {
+                    Image("iconNoTitle")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .cornerRadius(22)
+                        .padding(.top, -150)
+                        .shadow(radius: 28)
+                    
+                    mainScreenButton(number: 4, title: "Letras")
+                    
+                    NavigationLink(destination: ContentView()) {
+                        mainScreenButton(number: 5, title: "Letras")
+                    }
+                    
+                    mainScreenButton(number: 6, title: "Letras")
+                    
+                    mainScreenButton(number: 7, title: "Letras")
+                }
             }
-        }
+            .navigationBarHidden(true)
+        }  .navigationBarHidden(true)
     }
-
 }
 
 #Preview {

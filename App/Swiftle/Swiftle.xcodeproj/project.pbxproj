@@ -17,6 +17,9 @@
 		053AFB132C58345400C44D66 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB122C58345400C44D66 /* TabView.swift */; };
 		053AFB162C583C3300C44D66 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB152C583C3300C44D66 /* CalendarView.swift */; };
 		053AFB192C583CE000C44D66 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB182C583CE000C44D66 /* RankingView.swift */; };
+		053AFB1C2C58B2AA00C44D66 /* MembershipScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB1B2C58B2AA00C44D66 /* MembershipScreen.swift */; };
+		053AFB212C599B2C00C44D66 /* RegistrationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053AFB202C599B2C00C44D66 /* RegistrationForm.swift */; };
+		053AFB232C599EF700C44D66 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 053AFB222C599EF700C44D66 /* Launch Screen.storyboard */; };
 		0592ED2A2C48A69600727466 /* BackgroundGeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592ED292C48A69600727466 /* BackgroundGeneralView.swift */; };
 		0592ED2E2C48A6E000727466 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592ED2D2C48A6E000727466 /* SplashView.swift */; };
 		0592ED302C48A95300727466 /* RegularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592ED2F2C48A95300727466 /* RegularButton.swift */; };
@@ -65,6 +68,9 @@
 		053AFB122C58345400C44D66 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		053AFB152C583C3300C44D66 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		053AFB182C583CE000C44D66 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
+		053AFB1B2C58B2AA00C44D66 /* MembershipScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipScreen.swift; sourceTree = "<group>"; };
+		053AFB202C599B2C00C44D66 /* RegistrationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationForm.swift; sourceTree = "<group>"; };
+		053AFB222C599EF700C44D66 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		0592ED292C48A69600727466 /* BackgroundGeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGeneralView.swift; sourceTree = "<group>"; };
 		0592ED2D2C48A6E000727466 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		0592ED2F2C48A95300727466 /* RegularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularButton.swift; sourceTree = "<group>"; };
@@ -196,20 +202,38 @@
 			path = RankingView;
 			sourceTree = "<group>";
 		};
+		053AFB1A2C58B26400C44D66 /* MembershipScreen */ = {
+			isa = PBXGroup;
+			children = (
+				053AFB1B2C58B2AA00C44D66 /* MembershipScreen.swift */,
+			);
+			path = MembershipScreen;
+			sourceTree = "<group>";
+		};
+		053AFB1F2C599B0D00C44D66 /* RegistrationForm */ = {
+			isa = PBXGroup;
+			children = (
+				053AFB202C599B2C00C44D66 /* RegistrationForm.swift */,
+			);
+			path = RegistrationForm;
+			sourceTree = "<group>";
+		};
 		0592ED282C48A62400727466 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				053AFB1F2C599B0D00C44D66 /* RegistrationForm */,
+				053AFB1A2C58B26400C44D66 /* MembershipScreen */,
 				053AFB172C583CCE00C44D66 /* RankingView */,
 				053AFB142C583C0400C44D66 /* CalendarView */,
 				053AFB112C58344200C44D66 /* TabView */,
 				053AFB0E2C58310D00C44D66 /* MainScreen */,
 				053AFB072C582B3600C44D66 /* ViewModel */,
 				0592ED292C48A69600727466 /* BackgroundGeneralView.swift */,
+				0592ED352C48BF1B00727466 /* MembershipButton.swift */,
 				0592ED2D2C48A6E000727466 /* SplashView.swift */,
 				0592ED2F2C48A95300727466 /* RegularButton.swift */,
 				0592ED312C48AEA800727466 /* LoginView.swift */,
 				0592ED332C48B92400727466 /* mainScreenButton.swift */,
-				0592ED352C48BF1B00727466 /* MembershipButton.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -217,6 +241,7 @@
 		635CE2AC2C48336400F857AD = {
 			isa = PBXGroup;
 			children = (
+				053AFB222C599EF700C44D66 /* Launch Screen.storyboard */,
 				635CE2B72C48336400F857AD /* Swiftle */,
 				635CE2C82C48336700F857AD /* SwiftleTests */,
 				635CE2D22C48336700F857AD /* SwiftleUITests */,
@@ -382,6 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053AFB232C599EF700C44D66 /* Launch Screen.storyboard in Resources */,
 				635CE2C02C48336600F857AD /* Preview Assets.xcassets in Resources */,
 				635CE2BD2C48336600F857AD /* Assets.xcassets in Resources */,
 			);
@@ -425,10 +451,12 @@
 				053AFB102C58312000C44D66 /* MainScreenView.swift in Sources */,
 				0592ED342C48B92400727466 /* mainScreenButton.swift in Sources */,
 				635CE2E92C483E5A00F857AD /* ViewModel.swift in Sources */,
+				053AFB212C599B2C00C44D66 /* RegistrationForm.swift in Sources */,
 				635CE2E72C483C0300F857AD /* GameView.swift in Sources */,
 				053AFB032C577F5B00C44D66 /* ResponseCodes.swift in Sources */,
 				053AFAFC2C577E7A00C44D66 /* NetworkLogin.swift in Sources */,
 				0592ED322C48AEA800727466 /* LoginView.swift in Sources */,
+				053AFB1C2C58B2AA00C44D66 /* MembershipScreen.swift in Sources */,
 				0592ED2A2C48A69600727466 /* BackgroundGeneralView.swift in Sources */,
 				0592ED2E2C48A6E000727466 /* SplashView.swift in Sources */,
 			);
@@ -600,6 +628,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -629,6 +658,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
