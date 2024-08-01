@@ -6,6 +6,28 @@
 //
 
 import SwiftUI
+import AVKit
+
+class SoundManager {
+    static let intance = SoundManager()
+    
+    var player: AVAudioPlayer?
+    
+    enum SoundFile: String {
+        case win
+        case fail
+    }
+    
+    func playSound(sound: SoundFile) {
+        guard let url = Bundle.main.url(forResource: sound.rawValue, withExtension: "mp3") else {return}
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.play()
+        } catch let error {
+            print(error)
+        }
+    }
+}
 
 struct BannerView: View {
 	private let bannerType: BannerType
@@ -25,12 +47,18 @@ struct BannerView: View {
 					.padding()
 					.background(.red)
 					.cornerRadius(12)
+                    .onAppear {
+                        SoundManager.intance.playSound(sound: .fail)
+                    }
 			case .success:
 				Text("¡HAS GANADO!")
 					.foregroundColor(.white)
 					.padding()
 					.background(.blue)
 					.cornerRadius(12)
+                    .onAppear {
+                        SoundManager.intance.playSound(sound: .win)
+                    }
 			}
 			Spacer()
 		}

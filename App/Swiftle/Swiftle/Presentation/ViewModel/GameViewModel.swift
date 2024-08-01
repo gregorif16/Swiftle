@@ -77,6 +77,7 @@ final class ViewModel: ObservableObject {
 					if currentCharacter == String(result[result.index(result.startIndex, offsetBy: index)]) {
 						status = .match
 						print("\(currentCharacter) .match")
+                        SoundManager.intance.playSound(sound: .fail)
 					}
 				} else {
 					status = .dontAppear

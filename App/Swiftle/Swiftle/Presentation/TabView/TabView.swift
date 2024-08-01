@@ -31,23 +31,17 @@ struct TabGeneralView: View {
                                 .resizable()
                         }
                 }
-                .toolbarBackground(.blue, for: .tabBar)
-                .toolbarBackground(.visible, for: .tabBar)
-                .toolbar {
-                    ToolbarItem(placement: .topBarTrailing) {
-                        smallSquare
-                    }
-                }
                 
-                .overlay {
                     if menuVisible {
                         withAnimation {
                             MenuSquare
-                                .offset(x: 80, y: -335)
+                                .offset(x: 80, y: -300)
                         }
                     }
-                }
-               
+                
+                smallSquare
+                .offset(x: 160, y: -355)
+                
             }
         }  .navigationBarBackButtonHidden(true)
         .sheet(isPresented: $membershipScreenVisible, content: {
@@ -68,7 +62,7 @@ struct TabGeneralView: View {
                 menuVisible.toggle()
             } label: {
                 Image(systemName: menuVisible ? "x.circle" : "line.3.horizontal")
-                    .offset(x: -4)
+                    
             }
             
         } .frame(width: 40, height: 40)

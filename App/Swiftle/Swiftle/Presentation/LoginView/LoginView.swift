@@ -29,6 +29,7 @@ struct LoginView: View {
                             .padding()
                             .background(.clear)
                             .cornerRadius(8)
+                            .autocorrectionDisabled(true)
                             .foregroundColor(.white)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 14)
@@ -48,6 +49,7 @@ struct LoginView: View {
                             .frame(width: 300)
                             .padding()
                             .background(.clear)
+                            .autocorrectionDisabled(true)
                             .foregroundColor(.white)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 14)

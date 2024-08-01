@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GameView: View {
-	@ObservedObject var viewModel: ViewModel
+	@ObservedObject var viewModel = ViewModel()
 	
 	private let columns: [GridItem] = Array(repeating: GridItem(.flexible(minimum: 20), spacing: 0), count: 5)
 	
@@ -31,10 +31,10 @@ struct GameView: View {
                 }
             }
             .padding(.horizontal, 20)
-        }  .navigationBarHidden(true)
+        } 
 	}
 }
 
 #Preview {
-	GameView(viewModel: ViewModel())
+	GameView()
 }
